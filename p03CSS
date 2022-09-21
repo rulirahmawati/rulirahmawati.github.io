@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>P03 CSS</title>
+        <style>
+            table {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th {
+                border: 1px solid black;
+                text-align: center;
+                cursor: pointer;
+                transition: .2s;
+            }
+            td:hover{
+                background: rgb(255, 223, 248);
+            }
+            tr:nth-child(even) {
+                background-color: rgb(250, 181, 204);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Ruli Rahmawati | 41215452</h1>
+        <div>
+            <h2 style="text-align: center;">5 Teman Saya</h2>
+            <table style="width: 100%;">
+                <tr>
+                  <th>NO</th>
+                  <th>NAMA</th>
+                  <th>ALAMAT</th>
+                  <th colspan="2">AKSI</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Nia Agustin</td>
+                  <td>Harjamukti</td>
+                  <td>Edit</td>
+                  <td>Hapus</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Niken Zeliana Putri</td>
+                  <td>Depok</td>
+                  <td>Edit</td>
+                  <td>Hapus</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Shazifa Azhari</td>
+                  <td>Kejaksan</td>
+                  <td>Edit</td>
+                  <td>Hapus</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Santi Nurjulaiha</td>
+                    <td>Mundu</td>
+                    <td>Edit</td>
+                    <td>Hapus</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Muna Agni</td>
+                    <td>Gunung Jati</td>
+                    <td>Edit</td>
+                    <td>Hapus</td>
+                  </tr>
+        </div>
+    </body>
+</html>
