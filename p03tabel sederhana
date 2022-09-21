@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruli Rahmawati</title>
+  <style>
+    table {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td, th {
+      border: 1px solid #eca7a7;
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background-color: #b7eafa;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Ruli Rahmawati | 41215452</h1>
+  <div>
+    <h2 style="text-align: center;">TOP 10 MY FRIENDS</h2>
+    <table style="width: 100%;">
+      <tr>
+        <th>NO</th>
+        <th>NIM</th>
+        <th>NAMA</th>
+        <th>ALAMAT</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>41215528</td>
+        <td>Niken Zeliana Putri</td>
+        <td>Depok</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>41215521</td>
+        <td>Nia Agustin</td>
+        <td>Harjamukti</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>41215859</td>
+        <td>Santi Nurjulaiha</td>
+        <td>Talun</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>41215460</td>
+        <td>Shazifa Azhari</td>
+        <td>Harjamukti</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>41215446</td>
+        <td>Rika Septyani</td>
+        <td>Kidelima</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>41215453</td>
+        <td>Rynza Destrinolita</td>
+        <td>Kesambi</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>41215331</td>
+        <td>Rosa Rosiana</td>
+        <td>Kesambi</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>41215455</td>
+        <td>Safitri Khaerul Nisa</td>
+        <td>Kedawung</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>41215667</td>
+        <td>Salsabila</td>
+        <td>Gunung Jati</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>41215605</td>
+        <td>Siti Aiwastopa Riyandona</td>
+        <td>Cikelet</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
