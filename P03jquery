@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>P03 CSS</title>
+        <style>
+            table {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th {
+                border: 1px solid black;
+                text-align: center;
+                cursor: pointer;
+                transition: .2s;
+            }
+            td:hover{
+                background: rgb(255, 223, 248);
+            }
+            tr:nth-child(even) {
+                background-color: rgb(250, 181, 204);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Ruli Rahmawati | 41215452</h1>
+        <div>
+            <h2 style="text-align: center;">5 Teman Saya</h2>
+            <table style="width: 100%;">
+                <tr>
+                  <th>NO</th>
+                  <th>NAMA</th>
+                  <th>ALAMAT</th>
+                  <th>AKSI</th>
+                </tr>
+                <tr id="row-1">
+                  <td>1</td>
+                  <td class="nama_mhs">Nia Agustin</td>
+                  <td>Harjamukti</td>
+                  <td class="hapus" id="hapus-1">Hapus</td>
+                </tr>
+                <tr id="row-2">
+                  <td>2</td>
+                  <td class="nama_mhs">Santi Nurjulaiha</td>
+                  <td>Mundu</td>
+                  <td class="hapus" id="hapus-2">Hapus</td>
+                </tr>
+                <tr id="row-3">
+                  <td>3</td>
+                  <td class="nama_mhs">Shazifa Azhari</td>
+                  <td>Kejaksan</td>
+                  <td class="hapus" id="hapus-3">Hapus</td>
+                </tr>
+                <tr id="row-4">
+                    <td>4</td>
+                    <td class="nama_mhs">Niken Zeliana Putri</td>
+                    <td>Depok</td>
+                    <td class="hapus" id="hapus-4">Hapus</td>
+                </tr>
+                <tr id="row-5">
+                    <td>5</td>
+                    <td class="nama_mhs">Muna Agni</td>
+                    <td>Gunung Jati</td>
+                    <td class="hapus" id="hapus-5">Hapus</td>
+                  </tr>
+        </div>
+		<script>
+			$(document).ready(function(){
+                // alert(0)
+                $('.nama_mhs').click(function(){
+                    // alert(1)
+                    let isi = $(this).text();
+                    // alert(isi);
+                })
+
+                $('.hapus').click(function(){
+                    // alert(1)
+                    let yakin = confirm('Yakin mau menghapus?');
+                    if(!yakin) return;
+
+                    let id = $(this).prop('id');
+                    // alert(id);
+                    
+                    let rid = id.split('-')
+                    let baris_ke = rid[1];
+                    // alert(baris_ke);
+
+                    $('#row-'+baris_ke).slideUp()
+
+                    // alert('Anda yakin')
+
+                
+                })
+            })
+		</script>
+    </body>
+</html>
