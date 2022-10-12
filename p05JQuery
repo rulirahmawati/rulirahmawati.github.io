@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <title>5 My Bestie</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 20px;
+        }
+        th {
+            background-color:skyblue;
+            color: brown;
+        }
+		form{
+			width: 500px;
+			margin: 20px auto;
+		}
+		label,input 
+		{
+        display: block;
+        margin: 5px 0;
+        font-si: 15px;
+		}
+		button {
+        display: block;
+		}
+    </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <table class="tabelku">
+        <tr>
+            <th rowspan="2">Nama Kawan</th>
+        </tr>
+        <tr>
+            <th>Alamat</th>
+            <th>Prodi</th>
+			<th>Aksi</th>
+        </tr>
+        <tr class="row" id="row__1">
+            <td class="cell" id="nama__1">Santi</td>
+            <td class="cell" id="alamat__1">Perum</td>
+            <td class="cell" id="prodi__1">Teknik Informatika</td>
+			<td class="cell" id="hapus__1">Hapus</td>
+        </tr>
+        <tr class="row" id="row__2">
+            <td class="cell" id="nama__2">Salsa</td>
+            <td class="cell" id="alamat__2">Gunungjati</td>
+            <td class="cell" id="prodi__2">Teknik Informatika</td>
+			<td class="cell" id="hapus__2">Hapus</td>
+        </tr>
+        <tr class="row"  id="row__3" >
+            <td class="cell" id="nama__3">Ruli</td>
+            <td class="cell" id="alamat__3">Mundu</td>
+            <td class="cell" id="prodi__3">Teknik Informatika</td>
+			<td class="cell" id="hapus__3">Hapus</td>
+        </tr>
+		<tr class="row" id="row__4">
+            <td class="cell" id="nama__4">Gita</td>
+            <td class="cell" id="alamat__4">Mundu</td>
+            <td class="cell" id="prodi__4">Teknik Informatika</td>
+			<td class="cell" id="hapus__4">Hapus</td>
+		</tr>
+		<tr class="row" id="row__5">
+            <td class="cell" id="nama__5">Nia</td>
+            <td class="cell" id="alamat__5">Harjamukti</td>
+            <td class="cell" id="prodi__5">Teknik Informatika</td>
+			<td class="cell" id="hapus__5">Hapus</td>
+		</tr>
+	 
+   </table>
+	<script>
+		$(document).ready(function(){
+			//alert(0)
+			$('.cell').click(function(){
+				//alert(1)
+				let isi = $(this).text();
+				let tid = $(this).prop('id');
+				let rid = tid.split('__');
+				let id_row = rid[1];
+				let nama_mahasiswa = $('#nama__'+id_row).text();
+				
+				if(isi=='Hapus'){
+					let yakin = confirm(`Yakin hapus ${nama_mahasiswa} dari list ??`);
+					if(!yakin) return;
+					
+					$('#row__'+id_row).fadeOut();
+				
+				}
+				else{
+					alert('Belum ada aksi.Terimakasih.')
+				}
+			})
+		})
+	
+	</script>
+</body>
+</html>
